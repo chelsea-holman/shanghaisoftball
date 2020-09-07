@@ -1,0 +1,242 @@
+* {
+  margin: 0; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background: white;
+  color: #251f2c; }
+
+.text-emphasis {
+  color: #e31836;
+  font-size: 2rem; }
+
+.intro {
+  color: #2b3670;
+  font-size: 2.1rem;
+  text-align: center;
+  padding: 2rem; }
+
+.section-line {
+  height: 3px;
+  width: 30rem;
+  background: #e31836;
+  display: block;
+  margin: auto; }
+
+.topnav {
+  display: flex;
+  background: #2b3670;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0; }
+  .topnav .float-right {
+    padding-right: 3rem; }
+  .topnav a {
+    display: inline-block;
+    color: #bbbdbf;
+    padding: 0.875rem 1rem;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 600; }
+    .topnav a:hover {
+      color: #e31836; }
+  .topnav img {
+    width: 20%;
+    padding: 0.5rem 0 0 2rem; }
+  .topnav .icon {
+    display: none; }
+
+.header {
+  position: relative;
+  overflow: hidden;
+  height: 100vh; }
+  .header .skyline img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -5;
+    position: absolute; }
+  .header .logo img {
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    position: absolute; }
+
+.section {
+  display: block;
+  text-align: center;
+  margin: 1rem auto 5rem auto; }
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 5rem; }
+  .container div {
+    padding-left: 5rem; }
+    .container div .team-photo {
+      border-radius: 50%; }
+  .container p {
+    padding-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500; }
+  .container img {
+    width: 30rem; }
+
+.container-events {
+  align-items: flex-start; }
+
+.schedule-text {
+  padding-top: 2rem; }
+  .schedule-text p {
+    text-align: left; }
+    .schedule-text p span {
+      font-weight: 800; }
+
+.container-contact {
+  border: #2b3670 4px solid;
+  margin: 1.5rem 25rem;
+  padding: 2rem;
+  font-size: 1.2rem;
+  align-items: center; }
+  .container-contact p {
+    padding-bottom: 2rem; }
+  .container-contact i {
+    font-size: 2.2rem;
+    color: #2b3670; }
+  .container-contact a {
+    text-decoration: none;
+    color: #251f2c; }
+    .container-contact a:hover {
+      color: #e31836; }
+
+.footer {
+  background-color: #bbbdbf;
+  text-align: center;
+  padding: 1rem 0;
+  font-weight: 700;
+  color: #251f2c; }
+
+@media screen and (max-width: 600px) {
+  .section-line {
+    height: 2px;
+    width: 15rem; }
+  .topnav {
+    position: sticky; }
+  .topnav a {
+    display: none;
+    padding: 0.5rem 0.875rem; }
+  .topnav a.icon {
+    float: right;
+    display: block;
+    padding: 0.25 0 0 2rem; }
+  .intro {
+    padding: 2rem 2rem 0; }
+  .header {
+    height: 15rem; }
+    .header .skyline img {
+      height: 100%; }
+    .header .logo img {
+      width: 10rem; }
+  .text-emphasis {
+    font-size: 1.5rem; }
+  .section {
+    margin: 1rem auto; }
+    .section .container-about {
+      display: flex;
+      flex-wrap: wrap-reverse; }
+    .section .container {
+      padding: 1rem; }
+      .section .container div {
+        padding-left: 0rem; }
+      .section .container p {
+        padding-top: 1.5rem;
+        font-size: 1rem; }
+      .section .container img {
+        width: 18rem;
+        margin: 2rem 0 0; }
+    .section .container-events {
+      flex-wrap: wrap; }
+    .section .schedule-text {
+      padding-top: 0; }
+      .section .schedule-text p {
+        text-align: center; }
+    .section .container-contact {
+      margin: 1.5rem 1rem;
+      padding: 1.25rem;
+      font-size: 1rem; }
+      .section .container-contact p {
+        padding-bottom: 1rem; }
+      .section .container-contact i {
+        font-size: 2rem; } }
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: absolute; }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .topnav.responsive {
+    display: block; }
+  .topnav.responsive a {
+    display: block;
+    text-align: left;
+    font-size: 1rem; } }
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .topnav {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr; }
+    .topnav a {
+      padding: 0.2rem 0.2rem;
+      font-size: 1rem; }
+  .intro {
+    padding: 2rem 2rem 0; }
+  .header {
+    height: 35rem; }
+    .header .skyline img {
+      height: 100%; }
+    .header .logo img {
+      width: 20rem; }
+  .section {
+    margin: 1rem 5rem; }
+    .section .container-about {
+      display: flex;
+      flex-wrap: wrap-reverse; }
+      .section .container-about img {
+        width: 18rem;
+        margin: 2rem 0 0; }
+    .section .container {
+      padding: 1rem; }
+      .section .container div {
+        padding-left: 0rem; }
+      .section .container p {
+        padding-top: 1.5rem;
+        font-size: 1rem; }
+    .section .container-events {
+      flex-wrap: wrap; }
+      .section .container-events img {
+        width: 20rem;
+        margin-top: 3rem; }
+    .section .schedule-text {
+      padding: 0 2rem 0 0; }
+      .section .schedule-text p {
+        text-align: center; }
+    .section .container-contact {
+      margin: 1.5rem 1rem;
+      padding: 1.25rem;
+      font-size: 1rem; }
+      .section .container-contact p {
+        padding-bottom: 1rem; }
+      .section .container-contact i {
+        font-size: 2rem; } }
