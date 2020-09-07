@@ -140,7 +140,8 @@ body {
     display: block;
     padding: 0.25 0 0 2rem; }
   .intro {
-    padding: 2rem 2rem 0; }
+    padding: 2rem 2rem 0;
+    font-size: 1.6rem; }
   .header {
     height: 15rem; }
     .header .skyline img {
