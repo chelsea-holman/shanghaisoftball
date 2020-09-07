@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+
+    <title>Shanghai Softball</title>
+  </head>
+  <body>
+    <header>
+      <div class="topnav" id="myTopnav">
+        <div>
+          <img src="/dist/LOGO NO BG.png" alt="Shanghai Softball Logo" />
+        </div>
+
+        <div class="float-right">
+          <a href="#about">ABOUT US</a>
+          <a href="#events">UPCOMING EVENTS</a>
+          <a href="#contact">CONTACT US</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+      <div class="header">
+        <div class="skyline">
+          <img src="/dist/header.jpg" alt="shanghai skyline" />
+        </div>
+        <div class="logo">
+          <img src="/dist/ss logo.png" alt="shanghai softball logo" />
+        </div>
+      </div>
+    </header>
+
+    <h2 class="intro">SHANGHAI SOFTBALL LEAGUE</h2>
+
+    <section class="section" id="about">
+      <div class="container container-about">
+        <div>
+          <img class="team-photo" src="/dist/ABOUT US.jpg" alt="team photo" />
+        </div>
+        <div>
+          <h2 class="text-emphasis">ABOUT US</h2>
+          <p>
+            As a long standing tradition in Shanghai, the idea is to go out and
+            have some fun in the sun, meet new friends and have a few cold
+            beers. In addition to the games that we play in Shanghai, the league
+            sends teams out to tournaments all across Asia.
+          </p>
+          <p>
+            We offer a competitive environment with Spring and Fall season being
+            played in the daytime on Saturdays. In the summer, we play Saturday
+            nights, under the lights in a more social level of softball. Out
+            league welcomes all and has players between 17 and 62, male and
+            female.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-line" id="events"></div>
+
+    <section class="section">
+      <div class="container container-events">
+        <div class="schedule-text">
+          <h2 class="text-emphasis">
+            UPCOMING EVENTS <br />
+            & SCHEDULE
+          </h2>
+          <p>
+            <span>SEPTEMBER 5TH, 2020</span> - Season Kickoff and Recruitment
+            Event
+          </p>
+          <p><span>SEPTEMBER 12TH, 2020</span> - Fall Season Opener</p>
+        </div>
+        <div>
+          <img src="/dist/QR Image.jpg" alt="schedule" />
+        </div>
+      </div>
+    </section>
+
+    <div class="section-line" id="contact"></div>
+
+    <section class="section">
+      <div class="container-border">
+        <h2 class="text-emphasis">CONTACT US</h2>
+        <div class="container-contact">
+          <div>
+            <p>
+              We'd love to hear from you. <br />
+              To register for the upcoming season or to learn more about the
+              league send us an email or connect with us on WeChat, Facebook, or
+              Instagram.
+            </p>
+          </div>
+
+          <div>
+            <div>
+              <i class="far fa-envelope"></i>
+              <p>whatistherightemail@email.com</p>
+            </div>
+            <i class="fab fa-weixin"></i>
+            <p>mtostro29</p>
+          </div>
+          <div>
+            <i class="fab fa-facebook"></i>
+            <p>
+              <a
+                href="https://www.facebook.com/ShanghaiSoftballLeague/"
+                target="_blank"
+                >Shanghai Softball League Facebook</a
+              >
+            </p>
+          </div>
+          <div>
+            <i class="fab fa-instagram"></i>
+            <p>
+              <a
+                href="https://www.instagram.com/shanghaisoftballleague/"
+                target="_blank"
+                >Shanghai Softball League Instagram</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer">
+        <p>Copyright &copy; 2020, All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>
