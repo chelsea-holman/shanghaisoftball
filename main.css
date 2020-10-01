@@ -109,6 +109,8 @@ body {
 
 .container-partnerships {
   align-items: flex-start; }
+  .container-partnerships img {
+    width: 90%; }
 
 .container-contact {
   border: #2b3670 4px solid;
