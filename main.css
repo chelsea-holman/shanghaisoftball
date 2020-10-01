@@ -48,7 +48,7 @@ body {
     .topnav a:hover {
       color: #e31836; }
   .topnav img {
-    width: 20%;
+    width: 30%;
     padding: 0.5rem 0 0 2rem; }
   .topnav .icon {
     display: none; }
@@ -218,6 +218,8 @@ body {
     font-size: 0.875rem; }
   .topnav .float-right {
     padding-right: 1rem; }
+  .topnav img {
+    width: 50%; }
   .intro {
     padding: 2rem 2rem 0; }
   .header {
