@@ -28,25 +28,23 @@ body {
   margin: auto; }
 
 .topnav {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-items: end;
   background: #2b3670;
   position: fixed;
   z-index: 5;
   width: 100%;
-  justify-content: space-between;
   align-items: center;
   margin-bottom: 0; }
-  .topnav .float-right {
-    padding-right: 3rem; }
   .topnav a {
-    display: inline-block;
-    flex-wrap: nowrap;
+    justify-content: space-evenly;
     color: #bbbdbf;
     padding: 0.875rem 1rem;
     text-decoration: none;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-weight: 600;
-    white-space: nowrap; }
+    box-sizing: border-box; }
     .topnav a:hover {
       color: #e31836; }
   .topnav img {
@@ -213,14 +211,11 @@ body {
     font-size: 1rem; } }
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-  .topnav {
-    display: grid;
-    grid-template-columns: 0.6fr 1fr; }
-    .topnav a {
-      padding: 0.2rem 0.2rem;
-      font-size: 0.875rem; }
-    .topnav .float-right {
-      padding-right: 0; }
+  .topnav a {
+    padding: 0.2rem 0.2rem;
+    font-size: 0.875rem; }
+  .topnav .float-right {
+    padding-right: 1rem; }
   .intro {
     padding: 2rem 2rem 0; }
   .header {
