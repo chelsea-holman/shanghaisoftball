@@ -40,11 +40,13 @@ body {
     padding-right: 3rem; }
   .topnav a {
     display: inline-block;
+    flex-wrap: nowrap;
     color: #bbbdbf;
     padding: 0.875rem 1rem;
     text-decoration: none;
     font-size: 1.25rem;
-    font-weight: 600; }
+    font-weight: 600;
+    white-space: nowrap; }
     .topnav a:hover {
       color: #e31836; }
   .topnav img {
@@ -81,10 +83,6 @@ body {
   align-items: center;
   justify-content: center;
   padding: 2rem 5rem; }
-  .container div {
-    padding-left: 5rem; }
-    .container div .team-photo {
-      border-radius: 50%; }
   .container p {
     padding-top: 2rem;
     font-size: 1.2rem;
@@ -92,8 +90,15 @@ body {
   .container img {
     width: 30rem; }
 
+.container-about div {
+  padding-left: 5rem; }
+  .container-about div .team-photo {
+    border-radius: 50%; }
+
 .container-events {
   align-items: flex-start; }
+  .container-events img {
+    padding-left: 5rem; }
 
 .schedule-text {
   padding-top: 2rem; }
@@ -101,6 +106,9 @@ body {
     text-align: left; }
     .schedule-text p span {
       font-weight: 800; }
+
+.container-partnerships {
+  align-items: flex-start; }
 
 .container-contact {
   border: #2b3670 4px solid;
@@ -155,6 +163,9 @@ body {
     .section .container-about {
       display: flex;
       flex-wrap: wrap-reverse; }
+      .section .container-about img {
+        width: 18rem;
+        margin: 2rem 0 0; }
     .section .container {
       padding: 1rem; }
       .section .container div {
@@ -162,11 +173,12 @@ body {
       .section .container p {
         padding-top: 1.5rem;
         font-size: 1rem; }
-      .section .container img {
-        width: 18rem;
-        margin: 2rem 0 0; }
     .section .container-events {
       flex-wrap: wrap; }
+      .section .container-events img {
+        padding-left: 0;
+        width: 18rem;
+        margin: 2rem 0 0; }
     .section .schedule-text {
       padding-top: 0; }
       .section .schedule-text p {
@@ -174,11 +186,15 @@ body {
     .section .container-contact {
       margin: 1.5rem 1rem;
       padding: 1.25rem;
-      font-size: 1rem; }
+      font-size: 0.875rem; }
       .section .container-contact p {
         padding-bottom: 1rem; }
       .section .container-contact i {
-        font-size: 2rem; } }
+        font-size: 2rem; }
+  .container-partnerships {
+    display: block; }
+    .container-partnerships img {
+      width: 100%; } }
 
 @media screen and (max-width: 600px) {
   .topnav.responsive {
@@ -197,10 +213,12 @@ body {
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   .topnav {
     display: grid;
-    grid-template-columns: 0.8fr 1fr; }
+    grid-template-columns: 0.6fr 1fr; }
     .topnav a {
       padding: 0.2rem 0.2rem;
-      font-size: 1rem; }
+      font-size: 0.875rem; }
+    .topnav .float-right {
+      padding-right: 0; }
   .intro {
     padding: 2rem 2rem 0; }
   .header {
@@ -228,7 +246,8 @@ body {
       flex-wrap: wrap; }
       .section .container-events img {
         width: 20rem;
-        margin-top: 3rem; }
+        margin-top: 3rem;
+        padding-left: 0; }
     .section .schedule-text {
       padding: 0 2rem 0 0; }
       .section .schedule-text p {
