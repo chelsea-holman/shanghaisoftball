@@ -140,6 +140,8 @@ body {
     width: 15rem; }
   .topnav {
     position: sticky; }
+    .topnav img {
+      width: 50%; }
   .topnav a {
     display: none;
     padding: 0.5rem 0.875rem; }
